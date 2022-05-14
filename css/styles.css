@@ -1,0 +1,222 @@
+:root {
+
+--fuente_principal: 'Lexend', sans-serif;
+
+
+--telefono: 480px;
+--tablet: 768px;
+--desktop: 1024px;
+
+
+--primario: #e8505b;
+--secundario: rgb(189, 30, 89); 
+--negro: #000;
+--blanco: #FFFFFF;
+--gris: #686868;
+--grisClaro: #e1e1e1;
+
+--separacion: 5rem;
+
+}
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    font-family: var(--fuente_principal);
+    font-size: 1.6rem;
+}
+
+p {
+    color: var(--negro);
+    font-size: 2rem;
+}
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    padding:0;
+    list-style: none;
+    margin: 0;
+}
+
+.seccion {
+    padding: 2rem 0;
+}
+/***************header barra******************/
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 750px) { 
+    .barra__navegacion {
+        display: none;
+    }
+    .barra__login {
+        display: none;
+    }
+    .barra {
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    .barra__navegacion{ 
+        display: flex;
+        gap: 4rem; 
+    }
+}
+    
+
+.barra__link {
+        color: var(--negro);
+        text-decoration: none;
+        border-radius: 5rem;
+        box-shadow: 0px 3px 7px 0px var(--gris);
+        padding: 1.2rem 1.2rem;
+        background-color: rgba(255, 255, 255, 0.603);
+}
+.barra__link:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.barra__nombre {
+        color: var(--blanco);
+        margin: 0;
+        font-weight: 900;
+        border-radius: 5rem;
+        box-shadow: 0px 3px 7px 0px var(--gris);
+        padding: 3rem 3rem;
+        background-color: rgba(0, 0, 0, 0.603);
+        font-size: 3rem;
+}
+@media (max-width: 750px) {
+    .barra__nombre {
+        font-size: 3rem;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        padding: 2.5rem 2rem;
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0px 10px 10px 0px var(--gris);
+
+
+    }
+}
+
+/************header form******************/
+.formulario {
+    margin: 5rem auto 2rem auto;    
+    background-color: var(--blanco);
+    border-radius: 5rem;
+    box-shadow: 0px 3px 7px 0px var(--gris);
+    padding: 3rem 0;
+}
+    @media (min-width: 768px ) { 
+        .formulario {
+            display: flex;
+        justify-content:space-between;
+        max-width: 90rem;
+        padding: 0;
+        }  
+    }
+
+.formulario__campo {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+         
+@media (min-width: 768px ) { 
+    .formulario:nth-child(1) {
+        padding-left: 4rem;
+    } 
+}
+        
+.formulario__campo:hover {
+    background-color: #F0F0F0;
+    border-radius: 5rem;
+    box-shadow: 0px 6px 20px rgb(0 0 0 / 40%);
+}
+
+.formulario__label {
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+.formulario__input {
+    border: none;
+    width: 100%;
+    color: var(--gris);
+}
+
+.formulario__submit {
+    display: block;
+    height: 4rem;
+    border: none;
+    border-radius: 2rem;
+    background-image: radial-gradient( circle, rgb(255, 56, 92) 0%, var(--secundario) 100%  );
+    padding: 0 4rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+/******************************header background*********************/
+.header {
+    background-image: url(../img/paisaje1\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0 8rem 0;
+}
+
+.header__busqueda {
+    margin-top: 5rem;
+    text-align: center;
+    
+}
+    
+    @media (min-width: 768px) { 
+        .header__busqueda {
+            margin-top: 35rem;
+        }
+    }
+
+.header__busqueda-label {
+    margin-bottom: 3rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.header__busqueda-boton {
+    background-color: var(--blanco);
+    padding: 1.5rem 4rem;
+    color: var(--primario);
+    border-radius: 3rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+.header__busqueda-boton:hover {
+    background-color: var(--primario);
+    color:var(--grisClaro);
+    transition: 0.3s ease;
+}
+
+
