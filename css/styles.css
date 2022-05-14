@@ -183,7 +183,13 @@ ul {
     background-image: url(../img/paisaje1\ \(1\).jpg);
     background-size: cover;
     background-position: center;
-    padding: 4rem 0 8rem 0;
+    padding: 4rem 0 5rem 0;
+}
+@media (max-width: 550px) { 
+    .header {
+        padding: 4rem 0 3rem 0;
+    } 
+
 }
 
 .header__busqueda {
@@ -194,17 +200,17 @@ ul {
     
     @media (min-width: 768px) { 
         .header__busqueda {
-            margin-top: 35rem;
+            margin-top: 30rem;
         }
     }
 
 .header__busqueda-label {
-    margin-bottom: 3rem;
+    margin: 3rem;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);  
 }
 
-.header__busqueda-boton {
+a.header__busqueda-boton {
     background-color: var(--blanco);
     padding: 1.5rem 4rem;
     color: var(--primario);
@@ -220,3 +226,48 @@ ul {
 }
 
 
+/****************************section 1************************/
+.destinos__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+}
+@media (min-width: 540px) { 
+    .destinos__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+@media (min-width: 950px) { 
+    .destinos__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+    }
+}
+
+.destinos__heading { 
+    text-align: center;
+    background-color: rgba(70, 70, 230, 0.774);
+    padding: 1.5rem 0;
+    color: var(--blanco);
+    border-radius: 3rem;
+    font-size: 2rem;
+    font-weight: 900;
+
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.795);
+}
+
+.destino{
+    display: flex;
+    justify-content: space-evenly;
+    gap:2rem;
+    margin-top: 2rem;
+    align-items: center;
+    
+}
+.destino_imagen{
+    width: 14rem;
+}
+.destino__nombre, .destino__distancia {
+    margin: 1rem 0 0 0;
+}
+/****************************** section 2
