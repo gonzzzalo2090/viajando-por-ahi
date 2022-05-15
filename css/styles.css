@@ -252,7 +252,6 @@ a.header__busqueda-boton {
     border-radius: 3rem;
     font-size: 2rem;
     font-weight: 900;
-
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.795);
 }
 
@@ -267,7 +266,62 @@ a.header__busqueda-boton {
 .destino_imagen{
     width: 14rem;
 }
+.destino_imagen:hover { 
+    transform: scale(1.2);
+    transition: .3s ease;
+}
+
 .destino__nombre, .destino__distancia {
     margin: 1rem 0 0 0;
 }
-/****************************** section 2
+/****************************** section 2 ************************/
+.lugares__heading {
+    text-align: center;
+    background-color: rgba(226, 226, 226, 0.479);
+    padding: 1rem 0;
+    border-radius: 3rem;
+    box-shadow: 0px 5px 9px rgba(70, 70, 230, 0.774);
+}
+    @media (min-width: 768px) { 
+        .lugares__heading { 
+            box-shadow: 0px 7px 15px rgba(70, 70, 230, 0.774);
+        }
+    }
+
+.lugares__grid {
+    display: grid;
+    grid-template-columns: repeat(4,30rem);
+    gap: 2rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory; 
+}
+
+    @media (min-width: 540px) { 
+        .lugares__grid {
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    @media (min-width: 950px) { 
+        .lugares__grid {
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+
+.lugar {
+    scroll-snap-align: center;
+}
+    .lugar__imagen {
+        border-radius: 1rem;
+    }
+    .lugar__nombre {
+        font-size: 1.7rem;
+        text-align: center;
+        font-weight: 600;
+        background-color: rgba(70, 70, 230, 0.774);
+        padding: 1rem 0;
+        color: var(--blanco);
+        border-radius: 3rem;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.795);
+    }
+/*************************seccio 3 ****************************/
