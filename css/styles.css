@@ -140,6 +140,7 @@ ul {
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
          
@@ -385,7 +386,7 @@ a.header__busqueda-boton {
     color: var(--negro);
     text-decoration: none;
     border-radius: 5rem;
-    padding: 1.2rem 1.6rem;
+    padding: 1.2rem 2.6rem;
     background-color: rgba(255, 255, 255, 0.767);
     font-weight: 700;
     box-shadow: 0px 3px 9px rgba(119, 119, 119, 0.795);
@@ -395,9 +396,6 @@ a.header__busqueda-boton {
     color: white;
 }
 /*************************seccion 4*********************/
-.experiencias {
-    
-}
 
 .experiencias__listado {
     display: grid;
@@ -556,3 +554,66 @@ li {
     background-size: 3.2rem;
     margin-right: 1rem;
 }
+
+/*****************************Pagina registro************************************/
+.header__registro {
+    min-height:65rem;
+    background-image: url(../img/paisaje2\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    }
+
+    @media (max-width: 1000px) { 
+        .header__registro {
+            padding: 4rem 0 3rem 0;
+        } 
+    }
+
+.registrate__nombre{
+   text-align: center;
+   color: #FFF;
+   font-weight: 700;
+   font-size: 3.5rem;
+}
+@media (max-width: 500px) { 
+    .registrate__nombre {
+        font-size: 3.2rem;
+    }
+}    
+
+.header__form {
+    margin: 0 auto;    
+    background-color: var(--blanco);
+    border-radius: 5rem;
+    box-shadow: 0px 3px 7px 0px var(--gris);
+    padding: 4rem 0;
+    width: 40rem;
+    
+}
+
+@media (max-width: 500px) { 
+    .header__form{
+        width: 35rem;
+    }
+}
+
+
+.boton__registrate{
+    display: block;
+    height: 4rem;
+    border: none;
+    border-radius: 2rem;
+    background-image: radial-gradient( circle, rgb(255, 56, 92) 0%, var(--secundario) 100%  );
+    padding: 0 4rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
