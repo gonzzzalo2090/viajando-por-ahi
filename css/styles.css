@@ -557,7 +557,7 @@ li {
 
 /*****************************Pagina registro************************************/
 .header__registro {
-    min-height:65rem;
+    min-height:80rem;
     background-image: url(../img/paisaje2\ \(1\).png);
     background-repeat: no-repeat;
     background-size: cover;
